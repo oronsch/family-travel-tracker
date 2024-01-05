@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/countries.css">
+    <title>Countries List</title>
+</head>
+<body>
+    <h1>Countries List</h1>
+<button id="goBackButton">Go Back</button>
+    <table>
+  <tr>
+    <th>ID</th>
+    <th>Country</th>
+    <th>Capital</th>
+  </tr>
+  <% countries.forEach(country => { %>
+    <tr>
+      <td><%= country.id %></td>
+    <td><%= country.country %></td>
+    <td><%= country.capital %></td>
+</tr>
+    <% }) %>
+   
+</table>
+<script>
+    document.getElementById('goBackButton').addEventListener('click', function() {
+        window.location.href = '/';
+    });
+</script>
+</body>
+</html>

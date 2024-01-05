@@ -1,0 +1,32 @@
+/* Styling for button elements */
+button {
+  display: inline-block;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Styling for table elements */
+table {
+  font-family: "Roboto", sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Styling for table data (td) and header (th) cells */
+td, th {
+  
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+/* Styling for every even row in the table */
+tr:nth-child(even) {
+  color: #21252b;
+  background-color: #dddddd;
+}
